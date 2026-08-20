@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Header } from './components/layout/Header';
 import { Content } from './components/layout/Content';
+import { Footer } from './components/layout/Footer';
 import { ProjectsProvider, SelectedProjectProvider } from './context';
 
 export const App = ({ darkModeDefault = false }) => {
@@ -16,6 +17,7 @@ export const App = ({ darkModeDefault = false }) => {
         >
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Content />
+          <Footer />
         </main>
       </ProjectsProvider>
     </SelectedProjectProvider>
